@@ -18,4 +18,4 @@ pnpm dev
 
 ### Notes
 
-- route to access the WP REST API - `?rest_route=/wp/v2/posts`
+- route to access the WP REST API - `?rest_route=/wp/v2/posts` or  `/wp-json/wp/v2/posts`
