@@ -8,13 +8,13 @@ import {
 } from 'react';
 
 const Bottles = async () => {
-	const bottles = await fetch(
-		'http://127.0.0.1:8000/wp-json/wp/v2/bottles',
-	).then((res) => res.json());
+	const bottles = await fetch(`${process.env.WORDPRESS_API_URL}/bottles`).then(
+		(res) => res.json(),
+	);
 
 	return (
 		<div>
-			{bottles.map(
+			{bottles?.map(
 				(bottle: {
 					content: any;
 					acf: any;
