@@ -1,11 +1,4 @@
-import {
-	Key,
-	ReactElement,
-	JSXElementConstructor,
-	ReactFragment,
-	ReactPortal,
-	PromiseLikeOfReactNode,
-} from 'react';
+import { Key } from 'react';
 
 const Bottles = async () => {
 	const bottles = await fetch(`${process.env.WORDPRESS_API_URL}/bottles`).then(
